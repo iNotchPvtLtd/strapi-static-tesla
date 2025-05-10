@@ -16,10 +16,16 @@ const defaultIcons = {
 };
 
 const defaultIconsClass = {
-  'Autopilot': 'text-blue-500 text-4xl hover:text-blue-600 ',
-  'Long Range': 'text-green-500 text-4xl hover:text-green-600 ',
-  'Supercharging': 'text-red-500 text-4xl hover:text-red-600'
+  'Autopilot': 'text-blue-500 text-4xl hover:text-blue-600 transform hover:scale-110 transition-all duration-10',
+  'Long Range': 'text-green-500 text-4xl hover:text-green-600 transform hover:scale-110 transition-all duration-10',
+  'Supercharging': 'text-red-500 text-4xl hover:text-red-600 transform hover:scale-110 transition-all duration-300'
 };
+
+// const defaultIconsClass = {
+//   'Autopilot': 'text-blue-500 text-4xl hover:text-blue-600 ',
+//   'Long Range': 'text-green-500 text-4xl hover:text-green-600 ',
+//   'Supercharging': 'text-red-500 text-4xl hover:text-red-600'
+// };
 
 
 export default function Features({ features }: { features: Feature[] }) {
