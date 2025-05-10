@@ -7,12 +7,14 @@
     "build": "next build --no-lint",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build --no-lint && aws s3 sync out/  s3://imakesite/templates/tesla --delete"
+    "deploy": "npm run build --no-lint && aws s3 sync out/  s3://imakesite/templates/tesla --delete --acl public-read"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@tailwindcss/postcss": "^4.1.6",
+    "bootstrap": "^5.3.6",
     "grapesjs": "^0.22.7",
     "lightningcss": "^1.29.3",
     "lightningcss-darwin-arm64": "^1.29.3",
@@ -30,7 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.6",
+    "tailwindcss": "^2.2.19",
     "typescript": "^5"
   }
 }

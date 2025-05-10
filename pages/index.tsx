@@ -5,6 +5,8 @@ import Hero from "@/components/Hero";
 import Models from "@/components/Models";
 import Features from "@/components/Features";
 import './globals.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/globals.css';
 
 interface TeslaData {
   "hero-slides": any[];

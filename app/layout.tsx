@@ -1,7 +1,8 @@
 // app/layout.tsx
+import 'bootstrap/dist/css/bootstrap.min.css';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
-import './globals.css'
+import '../styles/globals.css';
 const roboto = Roboto({
   weight: ['400', '700'],
   subsets: ['latin'],
@@ -20,7 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          integrity="sha384-whatever"
+          crossOrigin="anonymous"
+        />
+       
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
