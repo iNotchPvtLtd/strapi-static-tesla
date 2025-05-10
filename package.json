@@ -7,7 +7,7 @@
     "build": "next build --no-lint",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build --no-lint && aws s3 sync out/  s3://imakesite/templates/tesla --delete --acl public-read"
+    "deploy": "npm run build && aws s3 sync out/  s3://imakesite/templates/tesla --delete --acl public-read"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -17,7 +17,6 @@
     "bootstrap": "^5.3.6",
     "grapesjs": "^0.22.7",
     "lightningcss": "^1.29.3",
-    "lightningcss-darwin-arm64": "^1.29.3",
     "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
